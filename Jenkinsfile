@@ -17,6 +17,10 @@ input "Deploy to QA?"
 
 stage('DEPLOY TO PROD') {
 steps {
-bat '''xcopy index.html C:\\apache-tomcat-11.0.18-windows-x64\\apache-tomcat-11.0.18\\webapps\\ROOT /E/I/Y
-
-}}}
+bat '''
+xcopy index.html C:\\apache-tomcat-11.0.18-windows-x64\\apache-tomcat-11.0.18\\webapps\\ROOT /E /I /Y
+'''
+}
+}
+}
+}
